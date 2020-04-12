@@ -124,9 +124,35 @@ textarea {
 }
 
 .ba-hero {
-  background: url(../img/bg_hero.svg) no-repeat top;
+  background: radial-gradient(
+      51.22% 51.22% at 54.2% 48.78%,
+      rgba(0, 0, 0, 0.9) 26.86%,
+      rgba(0, 0, 0, 0.9) 36.27%,
+      rgba(0, 0, 0, 0.9) 51.04%,
+      rgba(35, 34, 34, 0.39) 100%
+    ),
+    url(../img/bg_hero.svg) no-repeat top;
+
   min-height: 80vh;
   padding: 230px 0 230px;
+}
+
+.ba-hero__img {
+  position: relative;
+}
+
+.ba-hero__img:after {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  content: '';
+  width: 60%;
+  height: 15%;
+  background: radial-gradient(
+    70.18% 50% at 50% 50%,
+    rgba(57, 57, 57, 0.56) 19.27%,
+    rgba(37, 37, 37, 0) 100%
+  );
 }
 
 @media screen and (min-width: 1024px) {
