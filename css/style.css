@@ -146,13 +146,9 @@ textarea {
   bottom: -50px;
   left: 0;
   content: '';
-  width: 60%;
+  width: 100%;
   height: 15%;
-  background: radial-gradient(
-    70.18% 50% at 50% 50%,
-    rgba(57, 57, 57, 0.56) 19.27%,
-    rgba(37, 37, 37, 0) 100%
-  );
+  background: url(../img/bottom_shedow.svg) no-repeat;
 }
 
 @media screen and (min-width: 1024px) {
